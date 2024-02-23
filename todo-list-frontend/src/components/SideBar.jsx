@@ -15,12 +15,12 @@ function SideBar() {
             </div>
            
             <div className="flex flex-col gap-y-1  px-3">
-                <SideBarButton path="/my-day" >My Day</SideBarButton>
-                <SideBarButton path="/important" >Important</SideBarButton>
-                <SideBarButton path="/planned" >Planned</SideBarButton>
-                <SideBarButton path="/assigned-to-me" >Assigned To me</SideBarButton>
-                <SideBarButton path="/flagged-to-me" >Flagged To me</SideBarButton>
-                <SideBarButton path="/all-tasks" >Task</SideBarButton>
+                <SideBarButton path="" >My Day</SideBarButton>
+                <SideBarButton path="important" >Important</SideBarButton>
+                <SideBarButton path="planned" >Planned</SideBarButton>
+                <SideBarButton path="assigned-to-me" >Assigned To me</SideBarButton>
+                <SideBarButton path="flagged-to-me" >Flagged To me</SideBarButton>
+                <SideBarButton path="all-tasks" >Task</SideBarButton>
              
 
                 <hr className='mt-2' />

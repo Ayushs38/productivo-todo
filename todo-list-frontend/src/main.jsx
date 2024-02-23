@@ -15,18 +15,21 @@ import AssignedToMe from './components/screens/AssignedToMe.jsx';
 import FlaggedToMe from './components/screens/FlaggedToMe.jsx';
 import AllTasks from './components/screens/AllTasks.jsx';
 
+
+
+const routes = (
+  <Route path="/" element={<App />}>
+    <Route index element={<MyDay />} />
+    <Route path="important" element={<Important />} />
+    <Route path="planned" element={<Planned />} />
+    <Route path="assigned-to-me" element={<AssignedToMe />} />
+    <Route path="flagged-to-me" element={<FlaggedToMe />} />
+    <Route path="all-tasks" element={<AllTasks />} />
+  </Route>
+);
+
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="my-day" element={<MyDay />} />
-      <Route path="important" element={<Important/>} />
-      <Route path="planned" element={<Planned/>} />
-      <Route path="assigned-to-me" element={<AssignedToMe/>} />
-      <Route path="flagged-to-me" element={<FlaggedToMe/>} />
-      <Route path="all-tasks" element={<AllTasks/>} />
-      
-    </Route>
-  )
+  createRoutesFromElements(routes)
 );
 
 

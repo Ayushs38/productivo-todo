@@ -8,15 +8,18 @@ function MyDay() {
   const [task, setTask] = useState([])
 
   useEffect(() => {
-    const storedTasks = localStorage.getItem('task');
+    const storedTasks = localStorage.getItem('tasks');
+    console.log("Retrieved tasks from local storage:", storedTasks);
     if (storedTasks) {
       setTask(JSON.parse(storedTasks));
     }
-  }, [])
-
+  }, []);
+  
   useEffect(() => {
-    localStorage.setItem('task', JSON.stringify(task));
-  }, [task])
+    localStorage.setItem('tasks', JSON.stringify(task));
+    console.log("Saved tasks to local storage:", task);
+  }, [task]);
+  
 
   const handleChange = (event) => {
     setInput(event.target.value);
@@ -29,6 +32,8 @@ function MyDay() {
       setInput(event.target.value = '');
     }
   }
+  
+
 
   const handleEdit = (editedTask, index) => {
     if (editedTask.trim() !== '') {
