@@ -20,7 +20,7 @@ function SideBar() {
                 <SideBarButton path="planned" >Planned</SideBarButton>
                 <SideBarButton path="assigned-to-me" >Assigned To me</SideBarButton>
                 <SideBarButton path="flagged-to-me" >Flagged To me</SideBarButton>
-                <SideBarButton path="all-tasks" >Task</SideBarButton>
+                <SideBarButton path="all-tasks" >All Task</SideBarButton>
              
 
                 <hr className='mt-2' />
