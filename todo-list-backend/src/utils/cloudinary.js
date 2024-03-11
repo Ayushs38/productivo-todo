@@ -1,4 +1,4 @@
-import { v2 as cloudinary } from 'cloudCxSX6Z4PsVNyYlBlj6ojqzAW61Ainary';
+import { v2 as cloudinary } from 'cloudinary';
 import { log } from 'console';
 import fs from 'fs';
 
